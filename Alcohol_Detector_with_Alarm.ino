@@ -31,12 +31,12 @@ lcd.clear();
 void loop(){
   
 adcValue=0;
-for(int i=0;i<20;i++){
+for(int i=0;i<10;i++){
 adcValue+= analogRead(sensor_pin);
 delay(10);
 }
 
-val = (adcValue/20) * (5.0/1024.0);
+val = (adcValue/10) * (5.0/1024.0);
 mgL = 0.67 * val;
 
 lcd.setCursor(0, 0);
